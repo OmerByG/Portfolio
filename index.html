@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ömer Sezgin | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">&Ouml;mer Sezgin</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>&Ouml;mer Sezgin</span></h1>
+            <p>A passionate Web & App Developer with 5+ years of coding experience.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a 15-year-old developer who started coding 5 years ago. I specialize in Web Development, Windows Applications, and Game Development. 
+            I recently founded my small company, "Proton," and I'm excited to dive into mobile development soon. 
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C#</li>
+            <li>Lua</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Calculator</h3>
+            <p>A simple yet effective calculator application.</p>
+        </div>
+        <div class="project">
+            <h3>Top-Down Game</h3>
+            <p>A GTA 1-style top-down game with engaging mechanics.</p>
+        </div>
+        <div class="project">
+            <h3>Proton Website</h3>
+            <p>A comprehensive website for my company, featuring download links for our games and applications.</p>
+            <a href="https://protonx.pages.dev" target="_blank">View Website</a>
+        </div>
+        <div class="project">
+            <h3>Affiliate Marketing Website</h3>
+            <p>A platform designed for affiliate marketing.</p>
+            <a href="https://affilify.pages.dev" target="_blank">View Website</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:omersezgi4@gmail.com">omersezgi4@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/OmerByG" target="_blank">OmerByG</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/%C3%B6mer-sezgin-710b21302/" target="_blank">&Ouml;mer Sezgin</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 &Ouml;mer Sezgin Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #f39c12;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to bottom, #1c1c1c, #121212);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero-content h1 span {
+    color: #f39c12;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#skills li {
+    background: #1f1f1f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, scale 0.3s;
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+}
+
+#projects .project {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#projects .project h3 {
+    margin-top: 0;
+    color: #f39c12;
+}
+
+#projects .project a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#projects .project a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#contact {
+    position: relative;
+}
+
+#contact p {
+    text-align: center;
+    line-height: 2;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#contact a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #fff;
+}
+
+.nav-links a[href="#contact"]:focus::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f39c12;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: #aaa;
+    font-size: 0.9em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes growOnScroll {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.section-grow {
+    animation: growOnScroll 1s ease-out;
+}
+
+.section-grow.active {
+    transform: scale(1.1);
+}
+    </style>
+
+    <script>
+        window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.section-grow');
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            section.classList.add('active');
+        }
+    });
+});
+    </script>
+</body>
+</html>
